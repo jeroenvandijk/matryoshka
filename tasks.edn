@@ -1,0 +1,2 @@
+{:cmds {aws {:cmds #include "tasks/aws.edn"}
+        custom {:cmds #include "tasks/custom.edn"}}}

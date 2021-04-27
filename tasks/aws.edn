@@ -1,0 +1,508 @@
+{acm {:doc "more info on acm", :cmd (println "*executing acm*")},
+ acm-pca
+ {:doc "more info on acm-pca", :cmd (println "*executing acm-pca*")},
+ alexaforbusiness
+ {:doc "more info on alexaforbusiness",
+  :cmd (println "*executing alexaforbusiness*")},
+ amplify
+ {:doc "more info on amplify", :cmd (println "*executing amplify*")},
+ apigateway
+ {:doc "more info on apigateway",
+  :cmd (println "*executing apigateway*")},
+ apigatewaymanagementapi
+ {:doc "more info on apigatewaymanagementapi",
+  :cmd (println "*executing apigatewaymanagementapi*")},
+ apigatewayv2
+ {:doc "more info on apigatewayv2",
+  :cmd (println "*executing apigatewayv2*")},
+ appconfig
+ {:doc "more info on appconfig",
+  :cmd (println "*executing appconfig*")},
+ application-autoscaling
+ {:doc "more info on application-autoscaling",
+  :cmd (println "*executing application-autoscaling*")},
+ application-insights
+ {:doc "more info on application-insights",
+  :cmd (println "*executing application-insights*")},
+ appmesh
+ {:doc "more info on appmesh", :cmd (println "*executing appmesh*")},
+ appstream
+ {:doc "more info on appstream",
+  :cmd (println "*executing appstream*")},
+ appsync
+ {:doc "more info on appsync", :cmd (println "*executing appsync*")},
+ athena
+ {:doc "more info on athena", :cmd (println "*executing athena*")},
+ autoscaling
+ {:doc "more info on autoscaling",
+  :cmd (println "*executing autoscaling*")},
+ autoscaling-plans
+ {:doc "more info on autoscaling-plans",
+  :cmd (println "*executing autoscaling-plans*")},
+ backup
+ {:doc "more info on backup", :cmd (println "*executing backup*")},
+ batch {:doc "more info on batch", :cmd (println "*executing batch*")},
+ budgets
+ {:doc "more info on budgets", :cmd (println "*executing budgets*")},
+ ce {:doc "more info on ce", :cmd (println "*executing ce*")},
+ chime {:doc "more info on chime", :cmd (println "*executing chime*")},
+ cli-dev
+ {:doc "more info on cli-dev", :cmd (println "*executing cli-dev*")},
+ cloud9
+ {:doc "more info on cloud9", :cmd (println "*executing cloud9*")},
+ clouddirectory
+ {:doc "more info on clouddirectory",
+  :cmd (println "*executing clouddirectory*")},
+ cloudformation
+ {:doc "more info on cloudformation",
+  :cmd (println "*executing cloudformation*")},
+ cloudhsm
+ {:doc "more info on cloudhsm", :cmd (println "*executing cloudhsm*")},
+ cloudhsmv2
+ {:doc "more info on cloudhsmv2",
+  :cmd (println "*executing cloudhsmv2*")},
+ cloudsearch
+ {:doc "more info on cloudsearch",
+  :cmd (println "*executing cloudsearch*")},
+ cloudsearchdomain
+ {:doc "more info on cloudsearchdomain",
+  :cmd (println "*executing cloudsearchdomain*")},
+ cloudtrail
+ {:doc "more info on cloudtrail",
+  :cmd (println "*executing cloudtrail*")},
+ cloudwatch
+ {:doc "more info on cloudwatch",
+  :cmd (println "*executing cloudwatch*")},
+ codebuild
+ {:doc "more info on codebuild",
+  :cmd (println "*executing codebuild*")},
+ codecommit
+ {:doc "more info on codecommit",
+  :cmd (println "*executing codecommit*")},
+ codeguru-reviewer
+ {:doc "more info on codeguru-reviewer",
+  :cmd (println "*executing codeguru-reviewer*")},
+ codeguruprofiler
+ {:doc "more info on codeguruprofiler",
+  :cmd (println "*executing codeguruprofiler*")},
+ codepipeline
+ {:doc "more info on codepipeline",
+  :cmd (println "*executing codepipeline*")},
+ codestar
+ {:doc "more info on codestar", :cmd (println "*executing codestar*")},
+ codestar-connections
+ {:doc "more info on codestar-connections",
+  :cmd (println "*executing codestar-connections*")},
+ codestar-notifications
+ {:doc "more info on codestar-notifications",
+  :cmd (println "*executing codestar-notifications*")},
+ cognito-identity
+ {:doc "more info on cognito-identity",
+  :cmd (println "*executing cognito-identity*")},
+ cognito-idp
+ {:doc "more info on cognito-idp",
+  :cmd (println "*executing cognito-idp*")},
+ cognito-sync
+ {:doc "more info on cognito-sync",
+  :cmd (println "*executing cognito-sync*")},
+ comprehend
+ {:doc "more info on comprehend",
+  :cmd (println "*executing comprehend*")},
+ comprehendmedical
+ {:doc "more info on comprehendmedical",
+  :cmd (println "*executing comprehendmedical*")},
+ compute-optimizer
+ {:doc "more info on compute-optimizer",
+  :cmd (println "*executing compute-optimizer*")},
+ configservice
+ {:doc "more info on configservice",
+  :cmd (println "*executing configservice*")},
+ configure
+ {:doc "more info on configure",
+  :cmd (println "*executing configure*")},
+ connect
+ {:doc "more info on connect", :cmd (println "*executing connect*")},
+ connectparticipant
+ {:doc "more info on connectparticipant",
+  :cmd (println "*executing connectparticipant*")},
+ cur {:doc "more info on cur", :cmd (println "*executing cur*")},
+ datapipeline
+ {:doc "more info on datapipeline",
+  :cmd (println "*executing datapipeline*")},
+ datasync
+ {:doc "more info on datasync", :cmd (println "*executing datasync*")},
+ dax {:doc "more info on dax", :cmd (println "*executing dax*")},
+ ddb {:doc "more info on ddb", :cmd (println "*executing ddb*")},
+ deploy
+ {:doc "more info on deploy", :cmd (println "*executing deploy*")},
+ detective
+ {:doc "more info on detective",
+  :cmd (println "*executing detective*")},
+ devicefarm
+ {:doc "more info on devicefarm",
+  :cmd (println "*executing devicefarm*")},
+ directconnect
+ {:doc "more info on directconnect",
+  :cmd (println "*executing directconnect*")},
+ discovery
+ {:doc "more info on discovery",
+  :cmd (println "*executing discovery*")},
+ dlm {:doc "more info on dlm", :cmd (println "*executing dlm*")},
+ dms {:doc "more info on dms", :cmd (println "*executing dms*")},
+ docdb {:doc "more info on docdb", :cmd (println "*executing docdb*")},
+ ds {:doc "more info on ds", :cmd (println "*executing ds*")},
+ dynamodb
+ {:doc "more info on dynamodb", :cmd (println "*executing dynamodb*")},
+ dynamodbstreams
+ {:doc "more info on dynamodbstreams",
+  :cmd (println "*executing dynamodbstreams*")},
+ ebs {:doc "more info on ebs", :cmd (println "*executing ebs*")},
+ ec2 {:doc "more info on ec2", :cmd (println "*executing ec2*")},
+ ec2-instance-connect
+ {:doc "more info on ec2-instance-connect",
+  :cmd (println "*executing ec2-instance-connect*")},
+ ecr {:doc "more info on ecr", :cmd (println "*executing ecr*")},
+ ecs {:doc "more info on ecs", :cmd (println "*executing ecs*")},
+ efs {:doc "more info on efs", :cmd (println "*executing efs*")},
+ eks {:doc "more info on eks", :cmd (println "*executing eks*")},
+ elastic-inference
+ {:doc "more info on elastic-inference",
+  :cmd (println "*executing elastic-inference*")},
+ elasticache
+ {:doc "more info on elasticache",
+  :cmd (println "*executing elasticache*")},
+ elasticbeanstalk
+ {:doc "more info on elasticbeanstalk",
+  :cmd (println "*executing elasticbeanstalk*")},
+ elb {:doc "more info on elb", :cmd (println "*executing elb*")},
+ elbv2 {:doc "more info on elbv2", :cmd (println "*executing elbv2*")},
+ emr {:doc "more info on emr", :cmd (println "*executing emr*")},
+ es {:doc "more info on es", :cmd (println "*executing es*")},
+ events
+ {:doc "more info on events", :cmd (println "*executing events*")},
+ firehose
+ {:doc "more info on firehose", :cmd (println "*executing firehose*")},
+ fms {:doc "more info on fms", :cmd (println "*executing fms*")},
+ forecast
+ {:doc "more info on forecast", :cmd (println "*executing forecast*")},
+ forecastquery
+ {:doc "more info on forecastquery",
+  :cmd (println "*executing forecastquery*")},
+ frauddetector
+ {:doc "more info on frauddetector",
+  :cmd (println "*executing frauddetector*")},
+ fsx {:doc "more info on fsx", :cmd (println "*executing fsx*")},
+ gamelift
+ {:doc "more info on gamelift", :cmd (println "*executing gamelift*")},
+ glacier
+ {:doc "more info on glacier", :cmd (println "*executing glacier*")},
+ globalaccelerator
+ {:doc "more info on globalaccelerator",
+  :cmd (println "*executing globalaccelerator*")},
+ glue {:doc "more info on glue", :cmd (println "*executing glue*")},
+ greengrass
+ {:doc "more info on greengrass",
+  :cmd (println "*executing greengrass*")},
+ groundstation
+ {:doc "more info on groundstation",
+  :cmd (println "*executing groundstation*")},
+ guardduty
+ {:doc "more info on guardduty",
+  :cmd (println "*executing guardduty*")},
+ health
+ {:doc "more info on health", :cmd (println "*executing health*")},
+ history
+ {:doc "more info on history", :cmd (println "*executing history*")},
+ iam {:doc "more info on iam", :cmd (println "*executing iam*")},
+ imagebuilder
+ {:doc "more info on imagebuilder",
+  :cmd (println "*executing imagebuilder*")},
+ importexport
+ {:doc "more info on importexport",
+  :cmd (println "*executing importexport*")},
+ inspector
+ {:doc "more info on inspector",
+  :cmd (println "*executing inspector*")},
+ iot {:doc "more info on iot", :cmd (println "*executing iot*")},
+ iot-jobs-data
+ {:doc "more info on iot-jobs-data",
+  :cmd (println "*executing iot-jobs-data*")},
+ iot1click-devices
+ {:doc "more info on iot1click-devices",
+  :cmd (println "*executing iot1click-devices*")},
+ iot1click-projects
+ {:doc "more info on iot1click-projects",
+  :cmd (println "*executing iot1click-projects*")},
+ iotanalytics
+ {:doc "more info on iotanalytics",
+  :cmd (println "*executing iotanalytics*")},
+ iotevents
+ {:doc "more info on iotevents",
+  :cmd (println "*executing iotevents*")},
+ iotevents-data
+ {:doc "more info on iotevents-data",
+  :cmd (println "*executing iotevents-data*")},
+ iotsecuretunneling
+ {:doc "more info on iotsecuretunneling",
+  :cmd (println "*executing iotsecuretunneling*")},
+ iotsitewise
+ {:doc "more info on iotsitewise",
+  :cmd (println "*executing iotsitewise*")},
+ iotthingsgraph
+ {:doc "more info on iotthingsgraph",
+  :cmd (println "*executing iotthingsgraph*")},
+ kafka {:doc "more info on kafka", :cmd (println "*executing kafka*")},
+ kendra
+ {:doc "more info on kendra", :cmd (println "*executing kendra*")},
+ kinesis
+ {:doc "more info on kinesis", :cmd (println "*executing kinesis*")},
+ kinesis-video-archived-media
+ {:doc "more info on kinesis-video-archived-media",
+  :cmd (println "*executing kinesis-video-archived-media*")},
+ kinesis-video-media
+ {:doc "more info on kinesis-video-media",
+  :cmd (println "*executing kinesis-video-media*")},
+ kinesis-video-signaling
+ {:doc "more info on kinesis-video-signaling",
+  :cmd (println "*executing kinesis-video-signaling*")},
+ kinesisanalytics
+ {:doc "more info on kinesisanalytics",
+  :cmd (println "*executing kinesisanalytics*")},
+ kinesisanalyticsv2
+ {:doc "more info on kinesisanalyticsv2",
+  :cmd (println "*executing kinesisanalyticsv2*")},
+ kinesisvideo
+ {:doc "more info on kinesisvideo",
+  :cmd (println "*executing kinesisvideo*")},
+ kms {:doc "more info on kms", :cmd (println "*executing kms*")},
+ lakeformation
+ {:doc "more info on lakeformation",
+  :cmd (println "*executing lakeformation*")},
+ lambda
+ {:doc "more info on lambda", :cmd (println "*executing lambda*")},
+ lex-models
+ {:doc "more info on lex-models",
+  :cmd (println "*executing lex-models*")},
+ lex-runtime
+ {:doc "more info on lex-runtime",
+  :cmd (println "*executing lex-runtime*")},
+ license-manager
+ {:doc "more info on license-manager",
+  :cmd (println "*executing license-manager*")},
+ lightsail
+ {:doc "more info on lightsail",
+  :cmd (println "*executing lightsail*")},
+ machinelearning
+ {:doc "more info on machinelearning",
+  :cmd (println "*executing machinelearning*")},
+ macie {:doc "more info on macie", :cmd (println "*executing macie*")},
+ macie2
+ {:doc "more info on macie2", :cmd (println "*executing macie2*")},
+ managedblockchain
+ {:doc "more info on managedblockchain",
+  :cmd (println "*executing managedblockchain*")},
+ marketplace-catalog
+ {:doc "more info on marketplace-catalog",
+  :cmd (println "*executing marketplace-catalog*")},
+ marketplace-entitlement
+ {:doc "more info on marketplace-entitlement",
+  :cmd (println "*executing marketplace-entitlement*")},
+ marketplacecommerceanalytics
+ {:doc "more info on marketplacecommerceanalytics",
+  :cmd (println "*executing marketplacecommerceanalytics*")},
+ mediaconnect
+ {:doc "more info on mediaconnect",
+  :cmd (println "*executing mediaconnect*")},
+ mediaconvert
+ {:doc "more info on mediaconvert",
+  :cmd (println "*executing mediaconvert*")},
+ medialive
+ {:doc "more info on medialive",
+  :cmd (println "*executing medialive*")},
+ mediapackage
+ {:doc "more info on mediapackage",
+  :cmd (println "*executing mediapackage*")},
+ mediapackage-vod
+ {:doc "more info on mediapackage-vod",
+  :cmd (println "*executing mediapackage-vod*")},
+ mediastore
+ {:doc "more info on mediastore",
+  :cmd (println "*executing mediastore*")},
+ mediastore-data
+ {:doc "more info on mediastore-data",
+  :cmd (println "*executing mediastore-data*")},
+ mediatailor
+ {:doc "more info on mediatailor",
+  :cmd (println "*executing mediatailor*")},
+ meteringmarketplace
+ {:doc "more info on meteringmarketplace",
+  :cmd (println "*executing meteringmarketplace*")},
+ mgh {:doc "more info on mgh", :cmd (println "*executing mgh*")},
+ migrationhub-config
+ {:doc "more info on migrationhub-config",
+  :cmd (println "*executing migrationhub-config*")},
+ mobile
+ {:doc "more info on mobile", :cmd (println "*executing mobile*")},
+ mq {:doc "more info on mq", :cmd (println "*executing mq*")},
+ mturk {:doc "more info on mturk", :cmd (println "*executing mturk*")},
+ neptune
+ {:doc "more info on neptune", :cmd (println "*executing neptune*")},
+ networkmanager
+ {:doc "more info on networkmanager",
+  :cmd (println "*executing networkmanager*")},
+ opsworks
+ {:doc "more info on opsworks", :cmd (println "*executing opsworks*")},
+ opsworks-cm
+ {:doc "more info on opsworks-cm",
+  :cmd (println "*executing opsworks-cm*")},
+ organizations
+ {:doc "more info on organizations",
+  :cmd (println "*executing organizations*")},
+ outposts
+ {:doc "more info on outposts", :cmd (println "*executing outposts*")},
+ personalize
+ {:doc "more info on personalize",
+  :cmd (println "*executing personalize*")},
+ personalize-events
+ {:doc "more info on personalize-events",
+  :cmd (println "*executing personalize-events*")},
+ personalize-runtime
+ {:doc "more info on personalize-runtime",
+  :cmd (println "*executing personalize-runtime*")},
+ pi {:doc "more info on pi", :cmd (println "*executing pi*")},
+ pinpoint
+ {:doc "more info on pinpoint", :cmd (println "*executing pinpoint*")},
+ pinpoint-email
+ {:doc "more info on pinpoint-email",
+  :cmd (println "*executing pinpoint-email*")},
+ pinpoint-sms-voice
+ {:doc "more info on pinpoint-sms-voice",
+  :cmd (println "*executing pinpoint-sms-voice*")},
+ polly {:doc "more info on polly", :cmd (println "*executing polly*")},
+ pricing
+ {:doc "more info on pricing", :cmd (println "*executing pricing*")},
+ qldb {:doc "more info on qldb", :cmd (println "*executing qldb*")},
+ qldb-session
+ {:doc "more info on qldb-session",
+  :cmd (println "*executing qldb-session*")},
+ quicksight
+ {:doc "more info on quicksight",
+  :cmd (println "*executing quicksight*")},
+ ram {:doc "more info on ram", :cmd (println "*executing ram*")},
+ rds {:doc "more info on rds", :cmd (println "*executing rds*")},
+ rds-data
+ {:doc "more info on rds-data", :cmd (println "*executing rds-data*")},
+ redshift
+ {:doc "more info on redshift", :cmd (println "*executing redshift*")},
+ rekognition
+ {:doc "more info on rekognition",
+  :cmd (println "*executing rekognition*")},
+ resource-groups
+ {:doc "more info on resource-groups",
+  :cmd (println "*executing resource-groups*")},
+ resourcegroupstaggingapi
+ {:doc "more info on resourcegroupstaggingapi",
+  :cmd (println "*executing resourcegroupstaggingapi*")},
+ robomaker
+ {:doc "more info on robomaker",
+  :cmd (println "*executing robomaker*")},
+ route53
+ {:doc "more info on route53", :cmd (println "*executing route53*")},
+ route53domains
+ {:doc "more info on route53domains",
+  :cmd (println "*executing route53domains*")},
+ route53resolver
+ {:doc "more info on route53resolver",
+  :cmd (println "*executing route53resolver*")},
+ s3 {:doc "more info on s3", 
+     :cmds #include "aws/s3.edn"},
+ s3api {:doc "more info on s3api", :cmd (println "*executing s3api*")},
+ s3control
+ {:doc "more info on s3control",
+  :cmd (println "*executing s3control*")},
+ sagemaker
+ {:doc "more info on sagemaker",
+  :cmd (println "*executing sagemaker*")},
+ sagemaker-a2i-runtime
+ {:doc "more info on sagemaker-a2i-runtime",
+  :cmd (println "*executing sagemaker-a2i-runtime*")},
+ sagemaker-runtime
+ {:doc "more info on sagemaker-runtime",
+  :cmd (println "*executing sagemaker-runtime*")},
+ savingsplans
+ {:doc "more info on savingsplans",
+  :cmd (println "*executing savingsplans*")},
+ schemas
+ {:doc "more info on schemas", :cmd (println "*executing schemas*")},
+ sdb {:doc "more info on sdb", :cmd (println "*executing sdb*")},
+ secretsmanager
+ {:doc "more info on secretsmanager",
+  :cmd (println "*executing secretsmanager*")},
+ securityhub
+ {:doc "more info on securityhub",
+  :cmd (println "*executing securityhub*")},
+ serverlessrepo
+ {:doc "more info on serverlessrepo",
+  :cmd (println "*executing serverlessrepo*")},
+ service-quotas
+ {:doc "more info on service-quotas",
+  :cmd (println "*executing service-quotas*")},
+ servicecatalog
+ {:doc "more info on servicecatalog",
+  :cmd (println "*executing servicecatalog*")},
+ servicediscovery
+ {:doc "more info on servicediscovery",
+  :cmd (println "*executing servicediscovery*")},
+ ses {:doc "more info on ses", :cmd (println "*executing ses*")},
+ sesv2 {:doc "more info on sesv2", :cmd (println "*executing sesv2*")},
+ shield
+ {:doc "more info on shield", :cmd (println "*executing shield*")},
+ signer
+ {:doc "more info on signer", :cmd (println "*executing signer*")},
+ sms {:doc "more info on sms", :cmd (println "*executing sms*")},
+ snowball
+ {:doc "more info on snowball", :cmd (println "*executing snowball*")},
+ sns {:doc "more info on sns", :cmd (println "*executing sns*")},
+ sqs {:doc "more info on sqs", :cmd (println "*executing sqs*")},
+ ssm {:doc "more info on ssm", :cmd (println "*executing ssm*")},
+ sso {:doc "more info on sso", :cmd (println "*executing sso*")},
+ sso-oidc
+ {:doc "more info on sso-oidc", :cmd (println "*executing sso-oidc*")},
+ storagegateway
+ {:doc "more info on storagegateway",
+  :cmd (println "*executing storagegateway*")},
+ sts {:doc "more info on sts", :cmd (println "*executing sts*")},
+ support
+ {:doc "more info on support", :cmd (println "*executing support*")},
+ swf {:doc "more info on swf", :cmd (println "*executing swf*")},
+ synthetics
+ {:doc "more info on synthetics",
+  :cmd (println "*executing synthetics*")},
+ textract
+ {:doc "more info on textract", :cmd (println "*executing textract*")},
+ transcribe
+ {:doc "more info on transcribe",
+  :cmd (println "*executing transcribe*")},
+ transfer
+ {:doc "more info on transfer", :cmd (println "*executing transfer*")},
+ translate
+ {:doc "more info on translate",
+  :cmd (println "*executing translate*")},
+ waf {:doc "more info on waf", :cmd (println "*executing waf*")},
+ waf-regional
+ {:doc "more info on waf-regional",
+  :cmd (println "*executing waf-regional*")},
+ wafv2 {:doc "more info on wafv2", :cmd (println "*executing wafv2*")},
+ workdocs
+ {:doc "more info on workdocs", :cmd (println "*executing workdocs*")},
+ worklink
+ {:doc "more info on worklink", :cmd (println "*executing worklink*")},
+ workmail
+ {:doc "more info on workmail", :cmd (println "*executing workmail*")},
+ workmailmessageflow
+ {:doc "more info on workmailmessageflow",
+  :cmd (println "*executing workmailmessageflow*")},
+ workspaces
+ {:doc "more info on workspaces",
+  :cmd (println "*executing workspaces*")},
+ xray {:doc "more info on xray", :cmd (println "*executing xray*")}}

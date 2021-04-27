@@ -1,0 +1,7 @@
+{special
+  {:doc "do something special"
+   :paths ["foo"]
+   :deps {medley/medley {:mvn/version "1.3.0"}}
+   :requires ([medley.core])
+   :cmd (medley.core/index-by :id [{:id 1} {:id 2}])
+   }}

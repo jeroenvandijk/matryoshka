@@ -1,0 +1,11 @@
+{cp {:doc "more info on cp", :cmd (println "*executing cp*")},
+ ls {:doc "more info on ls", :cmd (println "*executing ls*")},
+ mb {:doc "more info on mb", :cmd (println "*executing mb*")},
+ mv {:doc "more info on mv", :cmd (println "*executing mv*")},
+ presign
+ {:doc "more info on presign", :cmd (println "*executing presign*")},
+ rb {:doc "more info on rb", :cmd (println "*executing rb*")},
+ rm {:doc "more info on rm", :cmd (println "*executing rm*")},
+ sync {:doc "more info on sync", :cmd (println "*executing sync*")},
+ website
+ {:doc "more info on website", :cmd (println "*executing website*")}}

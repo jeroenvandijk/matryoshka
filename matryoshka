@@ -1,0 +1,129 @@
+#!/usr/bin/env bb
+
+(defn read-tasks [f]
+  (clojure.edn/read-string {:readers
+                            {'include (fn [path]
+                                        (delay (read-tasks (clojure.java.io/file (.getParent (clojure.java.io/file f)) path))))}}
+                           (slurp f)))
+
+(defn forced-get-in
+  ([m ks]
+     (loop [m m
+            ks (seq ks)]
+       (if ks
+         (when-let [m (get (force m) (first ks))]
+           (recur m (next ks)))
+         (force m)))))
+
+(def tree (read-tasks "./tasks.edn"))
+
+(defn parse-cmd
+  "Split string to list of individual space separated arguments.
+  If argument contains space you can wrap it with `'` or `\"`."
+  [s]
+  (loop [s (java.io.StringReader. s)
+         in-double-quotes? false
+         in-single-quotes? false
+         buf (java.io.StringWriter.)
+         parsed []]
+    (let [c (.read s)]
+      (cond
+        (= -1 c) (if (pos? (count (str buf)))
+                   (conj parsed (str buf))
+                   parsed)
+        (= 39 c) ;; single-quotes
+        (if in-single-quotes?
+        ;; exit single-quoted string
+          (recur s in-double-quotes? false (java.io.StringWriter.) (conj parsed (str buf)))
+        ;; enter single-quoted string
+          (recur s in-double-quotes? true buf parsed))
+
+        (= 92 c) ;; assume escaped quote
+        (let [escaped (.read s)
+              buf (doto buf (.write escaped))]
+          (recur s in-double-quotes? in-single-quotes? buf parsed))
+
+        (and (not in-single-quotes?) (= 34 c)) ;; double quote
+        (if in-double-quotes?
+        ;; exit double-quoted string
+          (recur s false in-single-quotes? (java.io.StringWriter.) (conj parsed (str buf)))
+        ;; enter double-quoted string
+          (recur s true in-single-quotes? buf parsed))
+
+        (and (not in-double-quotes?)
+             (not in-single-quotes?)
+             (Character/isWhitespace c))
+        (recur s in-double-quotes? in-single-quotes? (java.io.StringWriter.)
+               (let [bs (str buf)]
+                 (cond-> parsed
+                   (not (str/blank? bs)) (conj bs))))
+        :else (do
+                (.write buf c)
+                (recur s in-double-quotes? in-single-quotes? buf parsed))))))
+
+
+(defn get-command [args]
+  (loop [tree (force tree)
+         [arg & left-args] args]
+    (if-not arg
+      [:ok tree]
+      (if-let [new-tree (forced-get-in tree [:cmds (symbol arg)])]
+        (recur new-tree left-args)
+        [:not-found tree]))))
+
+
+(defn execute [args]
+  (let [[status value] (get-command args)]
+    (case status
+      :ok        (let [{:keys [deps requires cmd]} value]
+                   (when (seq deps)
+                     (require '[babashka.deps :as deps])
+                     (deps/add-deps deps))
+
+                   ;; FIXME require doesn't work yet, what's the trick again?
+                   (when (seq requires)
+                     (let [form (apply list 'require (map (fn [require] (list 'quote require)) requires))]
+                       (eval form)))
+                   (eval cmd))
+
+      :not-found (do
+                   (println "No such command")
+                   (System/exit 1)))))
+
+(defn get-keys [value]
+   (keys (forced-get-in value [:cmds])))
+
+(defn complete [args]
+  (let [[status value] (get-command args)]
+    (case status
+      :ok        (println (clojure.string/join "\n" (get-keys value)))
+      :not-found
+      ;; Try again by autocompleting last
+      (let [[status value] (get-command (butlast args))]
+        (case status
+          :ok        (let [needle (last args)
+                           suggestions (filter #(clojure.string/starts-with? % needle) (get-keys value))]
+                       (println (clojure.string/join "\n" suggestions))
+                            )
+          :not-found nil)))))
+
+;; ==  Usage ==
+;
+; Approach copied from AWS Cli https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html#cli-command-completion-linux
+;
+; autoload bashcompinit && bashcompinit
+; autoload -Uz compinit && compinit
+; compinit
+;
+; complete -C matryoshaka matryoshaka
+;; `complete` gives the following env vars
+;; '[COMP_LINE COMP_LINE COMP_CWORD COMP_POINT]
+
+(if-let [cmd-str (System/getenv "COMP_LINE")]
+  (complete (rest (parse-cmd cmd-str)))
+
+  (case (first *command-line-args*)
+    ;; For testing
+    "--autocomplete" (complete (rest *command-line-args*))
+
+    (execute  *command-line-args*)))
