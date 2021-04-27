@@ -20,6 +20,8 @@ autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 compinit
 export PATH=".:$PATH"
+matryoshka # to make sure we're on the right path
+complete -C matryoshka matryoshka
 ```
 
 ## Credits to
