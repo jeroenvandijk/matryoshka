@@ -71,20 +71,21 @@
         (recur new-tree left-args)
         [:not-found tree]))))
 
+(defn eval-code [{:keys [paths deps requires cmd] :as context}]
+  (let [form (into (list 'do
+                         (when-let [deps (not-empty (select-keys context [:paths :deps]))]
+                           (list 'babashka.deps/add-deps (list 'quote deps)))
+                         (concat (list 'ns (gensym "eval"))
+                                 (when (seq requires)
+                                   (list (cons ':require requires))))
+                         cmd))]
+    (eval form)))
+
 
 (defn execute [args]
   (let [[status value] (get-command args)]
     (case status
-      :ok        (let [{:keys [deps requires cmd]} value]
-                   (when (seq deps)
-                     (require '[babashka.deps :as deps])
-                     (deps/add-deps deps))
-
-                   ;; FIXME require doesn't work yet, what's the trick again?
-                   (when (seq requires)
-                     (let [form (apply list 'require (map (fn [require] (list 'quote require)) requires))]
-                       (eval form)))
-                   (eval cmd))
+      :ok        (eval-code value)
 
       :not-found (do
                    (println "No such command")
