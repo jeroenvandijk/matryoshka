@@ -8,7 +8,7 @@ The main features are:
 
 ## Demo 
 
-<iframe width="630" height="355" src="https://www.loom.com/embed/4f56217c9c5c4d32a70b9e8b4316fcb7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<a href="https://www.loom.com/share/4f56217c9c5c4d32a70b9e8b4316fcb7"> <p>- Watch Video</p> <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/4f56217c9c5c4d32a70b9e8b4316fcb7-with-play.gif"> </a>
 
 ## Setup
 
